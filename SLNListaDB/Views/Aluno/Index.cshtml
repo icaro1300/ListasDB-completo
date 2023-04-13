@@ -5,17 +5,17 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col"> Nome</th>
-            <th scope="col">Idade</th>
+            <th scope="col">Sobrenome</th>
         </tr>
     </thead>
     <tbody>
 
-        @foreach (var item in @ViewBag.listaResponsavel)
+        @foreach (var item in @ViewBag.ViewBag.listaAluno)
         {
             <tr>
-                <td>@item.RespID </td>
-                <td>@item.RespNome </td>
-                <td>@item.RespIdade </td>
+                <td>@item.AlunoID </td>
+                <td>@item.AlunoNome </td>
+                <td>@item.AlunoSobrenome </td>
             </tr>
         }
     </tbody>

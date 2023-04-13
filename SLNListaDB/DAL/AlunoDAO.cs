@@ -16,14 +16,22 @@ namespace SLNListaDB.DAL
             _conexao = ConexaoBD.getConexao();
         }
 
-        public List<Aluno> getTodaOsAlunos()
+        public List<Aluno> getTodoOsAlunos()
         {
-            string query = "select * from Aluno";
-            _conexao.Open();
+            string sql = "select * from Aluno";
+            var dados = (List<Aluno>)_conexao.Query(sql);
 
-            var lista = (List<Aluno>)_conexao.Query(query);
-
-            return lista;
+            return dados;
+        }
+        public void InsertAluno(Aluno pAluno)
+        {
+            string sql = "insert Aluno (AlunoNome) values(@AlunoNome)";
+            int qtdInserida = _conexao.Execute(sql, pAluno);
+        }
+        public void insertAluno(Aluno pAluno)
+        {
+            string sql = "insert Aluno (AlunoSobrenome) values(@AlunoSobrenome)";
+            int qtdInserida = _conexao.Execute(sql, pAluno);
         }
     }
 }

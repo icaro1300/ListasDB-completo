@@ -1,0 +1,21 @@
+﻿<h2>Gestão de Sala</h2>
+
+<div>
+    <a class="btn btn-sucess" href="Sala/Create">Novo</a>
+</div>
+<div>
+      <table class="table">
+           <tr>
+              <td>#</td>
+              <td>Descricao</td>
+           </tr>
+     @foreach (var item in ViewBag.listasSalas)
+     {
+           <tr>
+            <td>@item.SalaID</td>
+            <td>@item.SalaDescricao</td>
+           </tr>
+     } 
+
+     </table>
+</div>

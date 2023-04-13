@@ -46,3 +46,8 @@ C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNLis
 C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\ref\SLNListaDB.dll
 C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\SLNListaDB.pdb
 C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\SLNListaDB.genruntimeconfig.cache
+C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\Razor\Views\Sala\Index.cshtml.g.cs
+C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\Razor\Views\Sala\Create.cshtml.g.cs
+C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\Razor\Views\Responsavel\Create.cshtml.g.cs
+C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\Razor\Views\Aluno\Create.cshtml.g.cs
+C:\Users\android\Documents\ICARO NAO APAGAR\visual sobre lista\SLNListaDB\SLNListaDB\obj\Debug\net5.0\Razor\Views\Aluno\Index.cshtml.g.cs

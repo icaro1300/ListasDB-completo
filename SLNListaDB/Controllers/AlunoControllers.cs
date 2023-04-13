@@ -9,10 +9,16 @@ namespace SLNListaDB.Controllers
 {
     public class AlunoControllers : Controller
     {
-        AlunoDAO tbAluno = new AlunoDAO();
         public IActionResult Index()
         {
-            ViewBag.listaAluno = tbAluno.getTodaOsAlunos();
+            AlunoDAO dados = new AlunoDAO();
+            ViewBag.listaAluno = dados.getTodoOsAlunos();
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
             return View();
         }
     }

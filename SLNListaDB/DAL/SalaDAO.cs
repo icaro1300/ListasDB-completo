@@ -18,12 +18,15 @@ namespace SLNListaDB.DAL
 
         public List<Sala> getTodaAsSalas()
         {
-            string query = "select * from Sala";
-            _conexao.Open();
+            string sql = "select * from Sala";
+            var dados = (List<Sala>)_conexao.Query<Sala>(sql);
 
-            var lista = (List<Sala>)_conexao.Query(query);
-
-            return lista;
+            return dados;
+        }
+        public void insertSala(Sala pSala)
+        {
+            string sql = "insert sala (SALADESCRICAO) values(@SalaDescricao)";
+            var qtdInserida = _conexao.Execute(sql, pSala);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SLNListaDB.DAL;
+using SLNListaDB.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,12 @@ namespace SLNListaDB.Controllers
         {
             ResponsavelDAO dados = new ResponsavelDAO();
             ViewBag.listaResponsavel = dados.getTodaOsResponsavel();
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
             return View();
         }
     }
